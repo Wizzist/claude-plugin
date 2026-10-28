@@ -29,6 +29,10 @@ key, or any secret, in chat; it is entered once in the plugin's configuration.
 - `review_learner_graph`: the learner's declared and demonstrated level, active
   tracks, momentum and ranked next recommendations, optionally for a `subject`.
 
+If a tool answers that the learner's current Wizzist access does not include
+it, say so plainly, keep using `today`, and send the learner to their Wizzist
+account to check their plan. Do not retry or describe it as an outage.
+
 ## Write tools (keys that can propose plans)
 
 - `propose_prep_plan`: for a test, a class, catching up or a goal. Pass

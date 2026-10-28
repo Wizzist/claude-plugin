@@ -1,7 +1,7 @@
 {
   "name": "wizzist",
   "displayName": "Wizzist",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Personalized study plans and a lasting learning record for a connected Wizzist student account: read today's step and class context, propose a plan, save selected practice, and return to the next step.",
   "author": {
     "name": "Wizzist LLC",
@@ -9,9 +9,13 @@
     "url": "https://wizzist.com"
   },
   "homepage": "https://wizzist.com/claude",
+  "repository": "https://github.com/Wizzist/claude-plugin",
+  "documentationUrl": "https://wizzist.com/claude",
+  "supportUrl": "https://wizzist.com/contact",
   "license": "MIT",
   "icon": "./.claude-plugin/icon.png",
   "privacyPolicyUrl": "https://wizzist.com/privacy",
+  "termsOfServiceUrl": "https://wizzist.com/terms",
   "keywords": [
     "education",
     "study",

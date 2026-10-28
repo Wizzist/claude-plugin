@@ -25,7 +25,7 @@ claude plugin update wizzist@wizzist
 
 ## Contents
 
-- `plugins/wizzist`: the plugin, version 0.2.0. Its README explains what
+- `plugins/wizzist`: the plugin, version 0.2.1. Its README explains what
   it can and cannot do.
 - `.claude-plugin/marketplace.json`: the marketplace manifest.
 - `SHA256SUMS`: SHA-256 digests of every published file.

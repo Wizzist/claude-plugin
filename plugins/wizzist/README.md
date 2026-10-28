@@ -13,7 +13,13 @@ custom connector. Enter `https://app.wizzist.com/api/v1/learning/mcp`, and
 under Advanced settings enter the OAuth client ID `wizzist-claude` with no
 secret. Connect and approve the Wizzist sign-in. Pilot accounts only for now.
 
-**Claude Code.** With the plugin enabled, open `/plugin`, choose Wizzist,
+**Claude Code.** Install the plugin:
+
+```
+/plugin install wizzist --marketplace wizzist/claude-plugin
+```
+
+Then open `/plugin`, choose Wizzist,
 then Configure options, and enter a planner key created in Wizzist Settings
 under AI assistants. Claude Code stores the key; it is never typed in chat.
 Then ask Claude Code what you should do today: it calls your planner's

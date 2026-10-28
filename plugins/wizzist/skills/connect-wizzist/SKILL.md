@@ -10,9 +10,10 @@ The plugin has two servers, and either one alone is enough to begin.
 - `wizzist-planner` (Claude Code only): the learner's planner, read with a
   personal planner key created in Wizzist Settings, under AI assistants. The
   key is entered once in the plugin's configuration, under Configure options
-  in `/plugin`. It works for any Wizzist student account. Its tools are
-  `today`, the `review_*` reads and, for a key that can propose plans,
-  `propose_prep_plan`, `schedule_study_event` and `set_learning_goal`.
+  in `/plugin`. Its tools are `today`, the `review_*` reads and, for a key
+  that can propose plans, `propose_prep_plan`, `schedule_study_event` and
+  `set_learning_goal`. `today` works for any Wizzist student account; the
+  other tools need the account's tutoring access.
 - `wizzist-learning` (every Claude surface): the learning record, signed in
   through Claude's connector sign-in (`/mcp` in Claude Code). Its tools begin
   with `get_profile`, `get_study_context` and the practice session tools.
