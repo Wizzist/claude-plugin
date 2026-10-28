@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "wizzist-learning": {
+      "type": "http",
+      "url": "https://app.wizzist.com/api/v1/learning/mcp"
+    },
+    "wizzist-planner": {
+      "type": "http",
+      "url": "https://app.wizzist.com/api/v1/planner/mcp",
+      "headers": {
+        "Authorization": "Bearer ${user_config.planner_key}"
+      }
+    }
+  }
+}

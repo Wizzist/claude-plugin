@@ -1,0 +1,19 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "wizzist",
+  "description": "Wizzist for Claude Code: personalized study plans and a lasting learning record for a Wizzist student account.",
+  "owner": {
+    "name": "Wizzist LLC",
+    "email": "support@wizzist.com",
+    "url": "https://wizzist.com"
+  },
+  "plugins": [
+    {
+      "name": "wizzist",
+      "description": "Personalized study plans and a lasting learning record for a connected Wizzist student account: read today's step and class context, propose a plan, save selected practice, and return to the next step.",
+      "category": "education",
+      "source": "./plugins/wizzist",
+      "homepage": "https://wizzist.com/claude"
+    }
+  ]
+}

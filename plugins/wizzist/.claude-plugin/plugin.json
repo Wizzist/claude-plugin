@@ -1,0 +1,31 @@
+{
+  "name": "wizzist",
+  "displayName": "Wizzist",
+  "version": "0.2.0",
+  "description": "Personalized study plans and a lasting learning record for a connected Wizzist student account: read today's step and class context, propose a plan, save selected practice, and return to the next step.",
+  "author": {
+    "name": "Wizzist LLC",
+    "email": "support@wizzist.com",
+    "url": "https://wizzist.com"
+  },
+  "homepage": "https://wizzist.com/claude",
+  "license": "MIT",
+  "icon": "./.claude-plugin/icon.png",
+  "privacyPolicyUrl": "https://wizzist.com/privacy",
+  "keywords": [
+    "education",
+    "study",
+    "tutoring",
+    "planner",
+    "homework"
+  ],
+  "userConfig": {
+    "planner_key": {
+      "type": "string",
+      "title": "Wizzist planner key",
+      "description": "A personal planner key from Wizzist Settings, under AI assistants (wzk_...). It lets Claude Code read today's steps and your plans, and, if the key allows it, propose a plan. Leave it empty to use only the learning connector.",
+      "sensitive": true,
+      "required": false
+    }
+  }
+}

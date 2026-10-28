@@ -1,0 +1,1 @@
+{"student_class":{"id":"{{input.student_class_id}}","title":"Biology","readiness":"not_ready","readiness_reason":"a test is in 16 days and no practice is recorded yet","commitments":[{"kind":"test","title":"Biology test","on":"2026-11-12"}],"next_actions":[{"title":"Review cell structure","minutes":20}]}}

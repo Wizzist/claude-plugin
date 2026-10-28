@@ -1,0 +1,181 @@
+{
+  "tools": [
+    {
+      "description": "Review upcoming anchors, today's schedule, open work, free windows, and recent completions",
+      "inputSchema": {
+        "properties": {
+          "student_class_id": {
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "name": "review_calendar"
+    },
+    {
+      "description": "Review mastery for one concept or up to 25 concepts in a subject",
+      "inputSchema": {
+        "properties": {
+          "concept_key": {
+            "type": "string"
+          },
+          "subject": {
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "name": "check_concept_mastery"
+    },
+    {
+      "description": "Concepts the student once knew that have decayed and are due for a refresher (the keep-sharp list).",
+      "inputSchema": {
+        "properties": {},
+        "type": "object"
+      },
+      "name": "review_due_for_review"
+    },
+    {
+      "description": "The learner in one view — declared level (profile/onboarding), demonstrated level (mastery ledger with decay), active course tracks, momentum — plus ranked serve-next recommendations mapping their level onto the curriculum.",
+      "inputSchema": {
+        "properties": {
+          "subject": {
+            "description": "Optional subject to focus the level read on",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "name": "review_learner_graph"
+    },
+    {
+      "description": "Review one learner-owned class, its readiness reason, commitments, and ranked next actions",
+      "inputSchema": {
+        "properties": {
+          "student_class_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "student_class_id"
+        ],
+        "type": "object"
+      },
+      "name": "review_student_class"
+    },
+    {
+      "description": "Propose a study plan the learner reviews and accepts. Either pass an owned anchor (anchor_type homework_item | schedule_event | learner_goal with anchor_id), or describe the need: need_kind test | class | catch_up | goal, a short title, subject, target_date (YYYY-MM-DD; required for a test), topics (the things the learner named), and student_class_id when known. A test is captured on the calendar as a test date; nothing else is scheduled until the learner accepts. If a required value is missing the result lists `needs` and a question to ask.",
+      "inputSchema": {
+        "properties": {
+          "anchor_id": {
+            "type": "string"
+          },
+          "anchor_type": {
+            "type": "string"
+          },
+          "need_kind": {
+            "type": "string"
+          },
+          "student_class_id": {
+            "type": "string"
+          },
+          "subject": {
+            "type": "string"
+          },
+          "target_date": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "topics": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      },
+      "name": "propose_prep_plan"
+    },
+    {
+      "description": "Schedule a study session on the learner's calendar or create an undated planner task",
+      "inputSchema": {
+        "properties": {
+          "anchor_id": {
+            "type": "string"
+          },
+          "anchor_type": {
+            "description": "What the session prepares for, e.g. Homework::HomeworkItem or Schedule::Event",
+            "type": "string"
+          },
+          "due_on": {
+            "type": "string"
+          },
+          "duration_minutes": {
+            "type": "integer"
+          },
+          "kind": {
+            "description": "study_session (default), or test / deadline to record a date the learner stated",
+            "type": "string"
+          },
+          "plan_item_id": {
+            "description": "Move this accepted or proposed plan step instead of adding a new event",
+            "type": "string"
+          },
+          "start_time": {
+            "type": "string"
+          },
+          "student_class_id": {
+            "description": "The learner's class this work counts for",
+            "type": "string"
+          },
+          "subject": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "title"
+        ],
+        "type": "object"
+      },
+      "name": "schedule_study_event"
+    },
+    {
+      "description": "Remember a goal only when the learner explicitly asks or states it",
+      "inputSchema": {
+        "properties": {
+          "priority": {
+            "type": "integer"
+          },
+          "subject": {
+            "type": "string"
+          },
+          "target_date": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "title"
+        ],
+        "type": "object"
+      },
+      "name": "set_learning_goal"
+    },
+    {
+      "description": "The learner's next steps now: must-do, study next, and if you have time, with links.",
+      "inputSchema": {
+        "properties": {},
+        "type": "object"
+      },
+      "name": "today"
+    }
+  ]
+}

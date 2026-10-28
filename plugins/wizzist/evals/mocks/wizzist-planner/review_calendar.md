@@ -1,0 +1,1 @@
+{"anchors":[{"kind":"test","title":"Biology test","on":"2026-11-12","student_class_id":"class_demo_bio"}],"today":[{"title":"Algebra 1","start_time":"2026-10-27T13:00:00Z","duration_minutes":50}],"open_work":[{"title":"Finish the algebra worksheet","due_on":"2026-10-28"}],"free_windows":[{"on":"2026-10-27","start_time":"16:00","minutes":90}],"recent_completions":[]}
